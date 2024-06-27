@@ -14,9 +14,15 @@ namespace CSPractice1
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            // #1 12-1. 기본 용어
+            // int base = 0;
+            var abc = 3;
+            // var var = 3;
+
+            // 한줄 주석
+            /*
+             * 여러 줄 주석
+             */
         }
     }
 }
