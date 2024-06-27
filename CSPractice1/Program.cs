@@ -111,6 +111,17 @@ namespace CSPractice1
             {
                 // other
             }
+
+            // #2 13-2. swtich 조건문
+            // 상태가 정해졌을 때 많이 사용
+            int v = 0;
+            switch (v)
+            {
+                case 0:
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
