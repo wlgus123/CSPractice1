@@ -23,6 +23,10 @@ namespace CSPractice1
             /*
              * 여러 줄 주석
              */
+
+            // #1 12-2. 출력
+            Console.WriteLine("Hello World");
+            Console.Write("줄바꿈 안하기");
         }
     }
 }
