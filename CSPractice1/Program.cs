@@ -122,6 +122,9 @@ namespace CSPractice1
                 default:
                     break;
             }
+
+            // #2 13-3. 삼항 연산자
+            Console.WriteLine(number % 2 == 0 ? true : false);
         }
     }
 }
