@@ -206,6 +206,10 @@ namespace CSPractice1
             Sample sample = new Sample();
             Console.WriteLine("세 번째 위치");
 
+            // #5 22-7. 소멸자
+
+
+
         }
     }
 }
