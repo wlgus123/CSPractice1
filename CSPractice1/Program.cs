@@ -1,11 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CSPractice1
 {
+    class Sample
+    {
+        public static int value;
+        static Sample()
+        {
+            value = 10;
+            Console.WriteLine("정적 생성자 호출");
+        }
+        public Sample()
+        {
+            Console.WriteLine("(인스턴스) 생성자 호출");                     
+        }
+
+        ~Sample()
+        {
+            Console.WriteLine("소멸자 호출");
+        }
+    }
+    class MyMath
+    {
+        // Abs(int)
+        public static int classVar = 1;
+        public int instancVar = 2;
+        public static int Abs(int input)
+        {
+            Console.WriteLine(classVar);
+            // 클래스 메서드에서 인스턴스 변수 접근 불가
+            //Console.WriteLine(instanceVar);
+            return (input >= 0) ? input : -input;
+        }
+
+        // Abs(double)
+        public static double Abs(double input) { return 0; }
+        // Abs(int)
+        // 메서드 시그네이처(이름, 매개변수)가 겹쳐서 안됨
+        //public static double Abs(int x) { return 0; }
+    }
+
+    class FirstClass
+    {
+
+    }
+
     internal static class Program
     {
         /// <summary>
@@ -138,7 +182,15 @@ namespace CSPractice1
                 Console.WriteLine(intArray2[i]);
                 i++;    // 탈출을 위한 변수
             }
-;
+
+
+
+
+
+
+            // #5 22-3. 클래스 메서드 <- 여기에서 커밋
+            // 위에 클래스 메서드 코드 있음
+
         }
     }
 }
